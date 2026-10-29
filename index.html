@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hengsodara Digital Wedding</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fbf3e5;color:#45151c}
+header{background:#681827;color:#f4d58b;text-align:center;padding:25px 12px}
+h1{font-size:clamp(22px,5vw,38px);margin:8px}
+header p{margin:8px;font-size:14px}
+main{max-width:1000px;margin:auto;padding:24px 16px}
+h2{text-align:center;color:#681827}
+.intro{text-align:center;line-height:1.9}
+.templates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:white;border:1px solid #d8b56d;border-radius:12px;overflow:hidden;text-align:center;padding-bottom:16px}
+.invite{margin:10px;height:220px;background:#681827;color:#f4d58b;border:3px double #d8b56d;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px}
+.gold{background:#e8d5a5;color:#681827}
+.cream{background:#f8e8d5;color:#681827}
+.invite h3{line-height:1.8}
+button{background:#681827;color:white;border:0;border-radius:20px;padding:11px 16px;cursor:pointer}
+button:focus{outline:3px solid #d8b56d}
+.notice{text-align:center;padding:16px;color:#681827}
+footer{text-align:center;background:#681827;color:#f4d58b;padding:20px}
+@media(max-width:650px){.templates{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.invite{height:190px}}
+@media(max-width:360px){.templates{grid-template-columns:1fr}.invite{height:230px}}
+</style>
+</head>
+<body>
+<header>
+<div>👑 HENGSODARA 👑</div>
+<h1>ធៀបការឌីជីថលខ្មែរ</h1>
+<p>Hengsodara Digital Wedding</p>
+</header>
+<main>
+<p class="intro">សូមស្វាគមន៍មកកាន់សេវាធៀបការឌីជីថល។<br>រចនាបថរាជវង្សខ្មែរ ពណ៌មាស និងក្រហមចាស់។</p>
+<h2>ជ្រើសរើសម៉ូដធៀបការ</h2>
+<div class="templates">
+<div class="card">
+<div class="invite"><div>❦ ក្បាច់អង្គរ ❦</div><h3>សិរីមង្គល<br>អាពាហ៍ពិពាហ៍</h3><div>♡ ♡</div></div>
+<h3>រាជវង្សក្រហម</h3>
+<button onclick="choose('រាជវង្សក្រហម')">ជ្រើសរើស</button>
+</div>
+<div class="card">
+<div class="invite gold"><div>✧ មង្គលជ័យ ✧</div><h3>សិរីសួស្តី<br>អាពាហ៍ពិពាហ៍</h3><div>❦ ❦</div></div>
+<h3>មាសអង្គរ</h3>
+<button onclick="choose('មាសអង្គរ')">ជ្រើសរើស</button>
+</div>
+<div class="card">
+<div class="invite cream"><div>❀ សូមគោរពអញ្ជើញ ❀</div><h3>ពិធីអាពាហ៍ពិពាហ៍</h3><div>♡ ♡</div></div>
+<h3>មង្គលបុរាណ</h3>
+<button onclick="choose('មង្គលបុរាណ')">ជ្រើសរើស</button>
+</div>
+</div>
+<div class="notice" id="notice">សូមជ្រើសរើសម៉ូដដែលអ្នកពេញចិត្ត។</div>
+</main>
+<footer>Hengsodara Digital Wedding · Khmer Royal Design</footer>
+<script>
+function choose(name){
+document.getElementById('notice').textContent='អ្នកបានជ្រើសរើសម៉ូដ៖ '+name+'។ សូមទាក់ទងម្ចាស់ Website ដើម្បីកម្មង់។';
+}
+</script>
+</body>
+</html>
